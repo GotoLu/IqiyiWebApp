@@ -4,20 +4,20 @@
 
 同时也可以在本地进行查看，作品使用nodeJS在后台进行简单搭建，入口地址是app.js。
 
-##** 操作步骤
+## 操作步骤
 1. git clone git@github.com:GotoLu/IqiyiWebApp.git
 2. 在本地仓库，npm install安装依赖库
 3. node app.js，根据提示信息“koa server is start!:: 3000”提示的3000端口访问localhost:3000
 
 
-##一、目录:
+## 一、目录:
 		mock: 模拟在线数据，以防接口挂掉时使用，时间仓促，只进行一部分工作。
     node_modules: 作品的依赖库。
     service: 连接前后端所用。
     static: 含有css、img、js静态文件。
     views: 里面存储模板文件。
 
-##二、作品实现的功能介绍：
+## 二、作品实现的功能介绍：
 1. 页面功能：
     主页：
         主页的顶栏、搜索框、轮播图、以及综合频道、电视剧、电影、资讯的推荐部分。
@@ -32,7 +32,7 @@
 2. 播放功能：
     直接调用爱奇艺提供的接口进行相应视频的播放。
 
-##三、相关技术
+## 三、相关技术
     1、nodeJS、Koa框架、ejs模板
     2、zepto框架
     3、VueJS
