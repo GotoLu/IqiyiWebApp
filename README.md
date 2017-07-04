@@ -10,12 +10,12 @@
 3. node app.js，根据提示信息“koa server is start!:: 3000”提示的3000端口访问localhost:3000
 
 
-## 一、目录:
-mock: 模拟在线数据，以防接口挂掉时使用，时间仓促，只进行一部分工作。
-    node_modules: 作品的依赖库。
-    service: 连接前后端所用。
-    static: 含有css、img、js静态文件。
-    views: 里面存储模板文件。
+## 一、目录：
+    mock：模拟在线数据，以防接口挂掉时使用，时间仓促，只进行一部分工作。
+    node_modules：作品的依赖库。
+    service：连接前后端所用。
+    static：含有css、img、js静态文件。
+    views：里面存储模板文件。
 
 ## 二、作品实现的功能介绍：
 ### 1. 页面功能：
