@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title><%= title %></title>
+	<link rel="stylesheet" href="/static/css/reset.css">
+	<link rel="stylesheet" href="/static/css/all.css">
+	<!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css"> -->
+	<script src="/static/scripts/zepto.min.js"></script>
+	<script src="/static/scripts/vue.js"></script>
+	<script src="/static/scripts/jquery.jsonp.js"></script>
+
+</head>
+<body>
+	<div class="container" id="app">
+		<% include include/index_header.html %>
+		<div class="scroll-container">
+			<% include include/index_search.html %>
+			<% include include/index_carousel.html %>
+			<% include include/index_category.html %>
+			<% include include/index_variety.html %>
+			<% include include/index_TV.html %>
+			<% include include/index_movie.html %>
+			<% include include/index_information.html %>
+		</div>
+		
+	</div>
+</body>
+	<script src="/static/scripts/index.js"></script>
+</html>

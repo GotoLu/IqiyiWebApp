@@ -1,0 +1,16 @@
+
+<div class="carousel">
+	<div class="img-container" >
+		<li class="carousel-img" v-for="carousel in recommend_carousel"><img class="img-responsive" v-bind:src="carousel.img" v-bind:alt="carousel.short_title" v-bind:title="carousel.title" :a_id="carousel.a_id" :tv_id="carousel.tv_id" v-on:click="launch"></li>
+	</div>
+</div>
+
+
+
+
+<!--
+<div class="carousel-img" v-for="carousel in recommend_carousel">
+	<div style="width: 200px; display: inline;">
+		<a href="/video_detail"><img class="img-responsive" v-bind:src="carousel.img" v-bind:alt="carousel.short_title" v-bind:title="carousel.title"></a>
+	</div>
+</div> -->

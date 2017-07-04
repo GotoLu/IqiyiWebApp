@@ -1,0 +1,22 @@
+
+<ul>
+    <div class="list-title">
+        <a href="javascript: "> {{ recommend_TV.channel_name }} </a>
+        <a id="video-more" href="/TV"> 更多详情>>> </a>
+    </div>
+
+    <li v-for="list in recommend_TV.video_list">
+        <div class="video-pic">
+            <a href="/video_detail"><img v-bind:alt="list.short_title" v-bind:src= "list.img" /></a>
+            <div v-if="parseInt(list.is_vip)" class="is-Vip">VIP</div>
+        </div>
+        <div class="video-info">
+            <label>片名：{{ list.short_title }}</label>
+            <label>评分：{{ list.sns_score }}</label>
+            <label>播放次数：{{ list.play_count_text }}</label>
+            <label>上映时间：{{ list.date_format }}</label>
+            <button type="button" :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">立即观看
+            </button>
+        </div>
+    </li>
+</ul>

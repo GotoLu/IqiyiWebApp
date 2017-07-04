@@ -1,0 +1,79 @@
+
+.container{
+    position: relative;
+    top: 45px;
+    width: 200px;
+    height: 240px;
+    background: white;
+    border: 1px solid gray;
+    margin: 0 auto;
+}
+form{
+    width: 186px;
+    height: 222px;
+    background: #ebf3fa;
+    border: 1px solid white;
+    margin: 10px auto;
+}
+.text1{
+    display: block;
+    width: 165px;
+    height: 30px;
+    margin: 10px auto;
+}
+
+.aux{
+    width: 165px;
+    height: 18px;
+    margin: 10px auto;
+}
+
+label, a{
+    font-size: 8px;
+}
+
+label{
+    float: left;
+}
+
+a{
+    float: right;
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+button{
+    display: block;
+    width: 165px;
+    height: 30px;
+    margin: 10px auto;
+    box-shadow: -5px 5px 8px pink;
+}
+
+button i{
+    background: url("/static/img/login.png");
+    display: block;
+    width: 161px;
+    height: 26px;
+}
+
+button i:hover{
+    cursor: pointer;
+}
+
+.btn1 i{
+    background-position: -18px -7px;
+}
+
+.btn2{
+    margin-top: 25px;
+}
+
+.btn2 i{
+    background-position: -18px -45px;
+}

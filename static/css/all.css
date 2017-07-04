@@ -1,0 +1,376 @@
+
+.container{
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #efeff0; 
+}
+.scroll-container{
+    position: relative;
+    top: 45px;
+}
+.list-title{
+    clear: both;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    display: block;
+    font-size: 25px;
+    padding: 5px 5px 1px 2px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.list-title a{
+    color: #6ba2ed;
+}
+.list-title #video-more{
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    color: #6ba2ed;
+}
+.list-title #video-more:hover{
+    color: red;
+}
+ul{
+    background-color: #fff;
+}
+li{
+    width: 100%;
+    height: 160px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.video-pic{
+    position: relative;
+    float: left;
+    height: 160px;
+    width: 120px;
+    margin-left: 5px;
+}
+.video-pic .is-Vip{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 35px;
+    height: 15px;
+    color: #ecf5e7;
+    background-color: #57a900;
+    font: 15px/15px a; 
+}
+.video-info{
+    position: relative;
+    float: left;
+    height: 160px;
+    width: 200px;
+    margin-left: 10px;
+}
+.video-info label{
+    display: block;
+    font-size: 15px;
+}
+.video-info button{
+    width: 70px;
+    height: 30px;
+    padding: 7px 8px;
+    border: 1.25px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    background-color: #5cb85c;
+    color: #fff;
+}
+
+#rank .video-pic .rank-champion{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+}
+#rank .video-pic .rank-champion:before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url('/static/img/champion.png');
+    background-size: 20px;
+}
+#rank .rank-other{
+    width: 100%;
+    height: 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#rank .rank-other span{
+    width: 40px;
+    height: 30px;
+    font: 14px;
+    padding: 8px 13px; 
+    display: inline-block;
+    color: #6ba2ed;
+    box-sizing: border-box;
+}
+#rank .rank-other label{
+    font: 20px/30px a;
+}
+
+.index-header{
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    background: #efeff0;
+    text-align: center;
+    z-index: 1000;
+    font: 20px/45px a;
+    top: 0;
+}
+.index-header .home{
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+.index-header .home:before{
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 8px 0 10px 10px;
+    background: url('/static/img/home.png');
+    background-size: 30px;
+}
+.index-header .signIn{
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 100%;
+}
+.index-header .signIn:after{
+    position: absolute;
+    right: 0;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 7px 10px 10px 0;
+    background: url('/static/img/sign.png');
+    background-size: 30px;
+}
+
+.carousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    clear: both;
+    background-color: #fff;
+}
+
+.carousel li{
+    /*padding: 2px;*/
+    width: 100%;
+    border: 1px solid #6ba2ed;
+    height: 100%;
+    overflow-x: hidden;
+    display: inline-block;
+    transition-duration: .5s;
+    transform: translate3d(0px, 0px, 0px);
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 0;
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.index-search{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 32px;
+    position: relative;
+    border-radius: 10px;
+    background: #efeff0;
+}
+.index-search .bg{
+    width: 90%;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #fff;
+}
+.index-search a:hover{
+    text-decoration: none;
+}
+
+.index-search span{
+    color: rgba(0,0,0,0.7);
+    font: 15px/30px a;
+}
+.index-search i{
+    float: left;
+    width: 25px;
+    height: 30px;
+    vertical-align: center;
+}
+.index-search i:before{
+    content: '';
+    display: block;
+    margin: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: url('/static/img/search.png');
+    background-size: 15px;
+}
+
+.search-container{
+    width: 100%;
+    box-sizing: border-box;
+}
+.search-section{
+    position: relative;
+    width: 100%;
+    height: 44px;
+    background-color: #efeff0;
+    padding: 5px 3% 5px 11%;
+}
+.search-section .back_home{
+    position: absolute;
+    left: 0;
+    font-size: 40px;
+    width: 10%;
+    min-width: 30px;
+    height: 44px;
+}
+.search-section .back_home a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.search-section label{
+    color: #b0b0b1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -12px;
+    margin-left: -11px;
+}
+.search-section i{
+    float: left;
+    width: 40px;
+    height: 40px;
+    vertical-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.search-section i:before{
+    content: '';
+    display: block;
+    margin: 8px;
+    width: 26px;
+    height: 26px;
+    background: url('/static/img/search.png');
+    background-size: 26px;
+}
+.search-section #search-text{
+    display: inline-block;
+    width: 60%;
+    height: 42px;
+}
+.search-section #search-text .search-text{
+    width: 100%;
+    height: 100%;
+    font: 18px/25px a;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 7px 0 7px 5px; 
+    box-sizing: border-box;
+}
+.search-section .search-button{
+    width: 13%;
+    min-width: 20px;
+    max-width: 120px;
+    height: 42px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+.search-section .search-button:hover{
+    color: #6ba2ed;
+}
+
+.index-category{
+    width: 100%;
+    height: 50px;
+    display: -webkit-flex;
+    display: flex;
+    background-color: #fff;
+}
+.category__TV{
+    flex-grow: 1;
+    text-align: center;
+}
+.category__TV i{
+    width: 100%;
+    display: block;
+}
+.category__TV i:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background: url('/static/img/TV.png');
+    background-size: 25px;
+}
+.category__TV span{
+    color: #6ba2ed;
+}
+.category__movie{
+    flex-grow: 1;
+    text-align: center;
+}
+.category__movie i{
+    width: 100%;
+    display: block;
+}
+.category__movie i:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background: url('/static/img/movie.png');
+    background-size: 25px;
+}
+.category__movie span{
+    color: #6ba2ed;
+}
+.category__rank{
+    flex-grow: 1;
+    text-align: center;
+}
+.category__rank i{
+    width: 100%;
+    display: block;
+}
+.category__rank i:before{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 25px;
+    height: 25px;
+    background: url('/static/img/rank.png');
+    background-size: 25px;
+}
+.category__rank span{
+    color: #6ba2ed;
+}

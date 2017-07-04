@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/all.css">
+    <script src="/static/scripts/zepto.min.js"></script>
+    <script src="/static/scripts/vue.js"></script>
+    <script src="/static/scripts/jquery.jsonp.js"></script>
+
+</head>
+
+<body>
+    <div id="rank">
+        <% include include/index_header.html %>
+        <div class="scroll-container">
+            <ul>
+                <div class="list-title" style="text-align: center;">
+                    <a href="javascript: "> {{ rank_TV_name + "排行榜" }} </a>
+                </div>
+
+                <li v-for="list in rank_TV_video.slice(0, 1)">
+                    <div class="video-pic">
+                        <img v-bind:alt="list.short_title" v-bind:src= "list.img" />
+                        <i class="rank-champion"></i>
+                    </div>
+                    <div class="video-info">
+                        <label>片名：{{ list.short_title }}</label>
+                        <label>评分：{{ list.sns_score }}</label>
+                        <label>播放次数：{{ list.play_count_text }}</label>
+                        <label>上映时间：{{ list.date_format }}</label>
+                        <button type="button" :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">立即观看
+                        </button>
+                    </div>
+                </li>
+                <li class="rank-other" v-for="(list, index) in rank_TV_video.slice(1)">
+                    <div :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">
+                        <span>0{{ index+2 }}</span>
+                        <label>{{ list.short_title }}</label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <div class="list-title" style="text-align: center;">
+                    <a href="javascript: "> {{ rank_movie_name + "排行榜" }} </a>
+                </div>
+
+                <li v-for="list in rank_movie_video.slice(0, 1)">
+                    <div class="video-pic">
+                        <img v-bind:alt="list.short_title" v-bind:src= "list.img" />
+                        <i class="rank-champion"></i>
+                    </div>
+                    <div class="video-info">
+                        <label>片名：{{ list.short_title }}</label>
+                        <label>评分：{{ list.sns_score }}</label>
+                        <label>播放次数：{{ list.play_count_text }}</label>
+                        <label>上映时间：{{ list.date_format }}</label>
+                        <button type="button" :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">立即观看
+                        </button>
+                    </div>
+                </li>
+                <li class="rank-other" v-for="(list, index) in rank_movie_video.slice(1)">
+                    <div :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">
+                        <span>0{{ index+2 }}</span>
+                        <label>{{ list.short_title }}</label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <div class="list-title" style="text-align: center;">
+                    <a href="javascript: "> {{ rank_variety_name + "排行榜" }} </a>
+                </div>
+
+                <li v-for="list in rank_variety_video.slice(0, 1)">
+                    <div class="video-pic">
+                        <img v-bind:alt="list.short_title" v-bind:src= "list.img" />
+                        <i class="rank-champion"></i>
+                    </div>
+                    <div class="video-info">
+                        <label>片名：{{ list.short_title }}</label>
+                        <label>评分：{{ list.sns_score }}</label>
+                        <label>播放次数：{{ list.play_count_text }}</label>
+                        <label>上映时间：{{ list.date_format }}</label>
+                        <button type="button" :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">立即观看
+                        </button>
+                    </div>
+                </li>
+                <li class="rank-other" v-for="(list, index) in rank_variety_video.slice(1)">
+                    <div :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">
+                        <span>0{{ index+2 }}</span>
+                        <label>{{ list.short_title }}</label>
+                    </div>
+                </li>
+            </ul>
+
+            <ul>
+                <div class="list-title" style="text-align: center;">
+                    <a href="javascript: "> {{ rank_information_name + "排行榜" }} </a>
+                </div>
+
+                <li v-for="list in rank_information_video.slice(0, 1)">
+                    <div class="video-pic">
+                        <img v-bind:alt="list.short_title" v-bind:src= "list.img" />
+                        <i class="rank-champion"></i>
+                    </div>
+                    <div class="video-info">
+                        <label>片名：{{ list.short_title }}</label>
+                        <label>评分：{{ list.sns_score }}</label>
+                        <label>播放次数：{{ list.play_count_text }}</label>
+                        <label>上映时间：{{ list.date_format }}</label>
+                        <button type="button" :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">立即观看
+                        </button>
+                    </div>
+                </li>
+                <li class="rank-other" v-for="(list, index) in rank_information_video.slice(1)">
+                    <div :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">
+                        <span>0{{ index+2 }}</span>
+                        <label>{{ list.short_title }}</label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+</body>
+    <script src="/static/scripts/rank.js"></script>
+</html>

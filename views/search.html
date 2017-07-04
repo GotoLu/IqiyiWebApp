@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/all.css">
+    <!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css"> -->
+    <script src="/static/scripts/zepto.min.js"></script>
+    <script src="/static/scripts/vue.js"></script>
+    <script src="/static/scripts/jquery.jsonp.js"></script>
+</head>
+<body>
+    <div class="search-container" id="search">
+        <div class="search-section">
+
+                <div class="back_home"><a href="/">
+                    <label>&lt</label></a>
+                </div>
+
+            <i></i>
+            <div id="search-text" >
+                <input class="search-text" type="text" name="search" holderplace="请输入电视剧/电影/综艺节目名称" />
+            </div><input v-on:click="getResult" class="search-button" type="button" name="search" value="搜索">
+        </div>
+        <div class="search-result">
+            <ul>
+                <li v-for="list in result">
+                    <div class="video-pic">
+                        <img v-bind:alt="list.short_title" v-bind:src= "list.img" />
+                        <div v-if="parseInt(list.is_vip)" class="is-Vip">VIP</div>
+                    </div>
+                    <div class="video-info">
+                        <label>片名：{{ list.short_title }}</label>
+                        <label>评分：{{ list.sns_score }}</label>
+                        <label>播放次数：{{ list.play_count_text }}</label>
+                        <label>上映时间：{{ list.date_format }}</label>
+                        <button type="button" :a_id="list.a_id" :tv_id="list.tv_id" v-on:click="launch">立即观看
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+    <script src="/static/scripts/search.js"></script>
+</html>

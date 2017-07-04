@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="/static/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/sign.css">
+    <!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css"> -->
+    <script src="/static/scripts/zepto.min.js"></script>
+    <script src="/static/scripts/vue.js"></script>
+    <script src="/static/scripts/jquery.jsonp.js"></script>
+</head>
+<body>
+    <div class="index-header">
+        <a href="/"><i class="home"></i></a>
+        <span><%= title %></span>
+        <div class="back_home">
+            <a href="/">
+                <label>&lt</label>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+         <form action="#">
+             <input type="text" class="text1" placeholder="     邮箱/手机号/用户名">
+             <input type="text" class="text1" placeholder="     请输入密码">
+
+             <div class="aux">
+                 <label><input type="checkbox" name="autoLog" /> 下次自动登录 </label>
+                 <a href="#">忘记密码？</a>
+             </div>
+
+             <button class="btn1"><i></i></button>
+             <button class="btn2"><i></i></button>
+         </form>
+    </div>
+</body>
+</html>
